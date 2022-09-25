@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Crypto Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/static/dist/img/favicon.png">
+        <!-- Place favicon.png in the root directory -->
+
+		<!-- ========================= CSS here ========================= -->
+		<link rel="stylesheet" href="/static/dist/css/bootstrap-5.0.0-alpha-1.min.css">
+        <link rel="stylesheet" href="/static/dist/css/LineIcons.2.0.css">
+		<link rel="stylesheet" href="/static/dist/css/animate.css">
+		<link rel="stylesheet" href="/static/dist/css/main.css">
+    </head>
+    <style type="text/css">
+        body{
+            background-color: #1e2533;
+            color:white;
+        }
+        .feature_img{
+            width: 60%;
+            height: 100px;
+        }
+        body h2{
+            color: white;
+        }
+        body p{
+            color: white;
+        }
+        .team-img img{
+            width: 200px;
+            height: 150px;
+        }
+        .team-info h5{
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- ========================= preloader start ========================= -->
+            <div class="preloader d-none">
+                <div class="loader">
+                    <div class="ytp-spinner">
+                        <div class="ytp-spinner-container">
+                            <div class="ytp-spinner-rotator">
+                                <div class="ytp-spinner-left">
+                                    <div class="ytp-spinner-circle"></div>
+                                </div>
+                                <div class="ytp-spinner-right">
+                                    <div class="ytp-spinner-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- preloader end -->
+
+        <!-- ========================= header start ========================= -->
+        <header class="header navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="col-lg-2">
+                                <a class="navbar-brand" >
+                                    <img src="/static/cot_logo.png" alt="Logo" style="height: 105px;padding-top: 15px;width: 100px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-8" style="text-align: center;">
+                                <h2 style="font-size: 41px;">Cryptocurrency Analytics System</h2>
+                                <h3 style="color: wheat;">College Of Technology, Pantnagar</h3>
+                            </div>
+                            <div class="col-lg-2">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="page-scroll active" href="/crypto_dashboard/signin/">Login</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        
+        </header>
+        <!-- ========================= header end ========================= -->
+
+        <!-- ========================= hero-section start ========================= -->
+        <section id="home" class="hero-section">
+            <div class="shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container" style="margin-top: 70px;">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="hero-content-wrapper">
+                            <h1 class="text-white wow fadeInDown" style="font-size: 31px;line-height: 50px;" data-wow-delay=".2s">Keep track of your invested currency with Cryptocurrency Analytics System</h1>
+                            <p class="text-white wow fadeInLeft"  data-wow-delay=".4s">Cryptocurrency Analytics System give live stats of your cryptocurrency with advance future prediction of price using ML algorithem.</p>
+                            <a href="/crypto_dashboard/signup/" class="theme-btn wow fadeInUp"  data-wow-delay=".6s">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="hero-img">
+                            <img src="/static/dashboard.png" alt="" class="wow fadeInRight"  data-wow-delay=".5s">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= hero-section end ========================= -->
+
+        <!--========================= feature-section start========================= -->
+        <section id="feature" class="feature-section pt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-8 mx-auto">
+                        <div class="section-title text-center mb-55">
+                            <h2 class="mb-20 wow fadeInUp" data-wow-delay=".2s">Features</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">Fully automatic features to make your experience comfortable .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-feature text-center mb-30 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="feature-img mb-20">
+                                    <img class='feature_img' src="/static/currency_stats.png" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Live Currency Stats</h5>
+                                    <p>Live price of your selected currency along with the percent change in price in last 24 hrs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-feature text-center mb-30 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="feature-img mb-25">
+                                    <img class='feature_img' src="/static/historical_data.png" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Historical data</h5>
+                                    <p>Visualization of historical data with interactive figures to keep track of trends of price in the past .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-feature text-center mb-30 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="feature-img mb-20">
+                                    <img class='feature_img' src="/static/custom_alert.png" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Custom Notification</h5>
+                                    <p>Custom notification feature enable user to set threshold for different currencies in order to get Buy/Sell notifications via emial from admin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-feature text-center mb-30 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="feature-img mb-20">
+                                    <img class='feature_img' src="/static/prediction.png" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h5>1 Week Smart Prediction </h5>
+                                    <p>With the use of facebook's prophet model for prediction of timeseries data, A one week prediction of different currencies are made which helps user to make a smart choice</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-feature text-center mb-30 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="feature-img mb-20">
+                                    <img class='feature_img' src="/static/social_response.png" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Social Response List</h5>
+                                    <p>Social response feature shows tabular view of social reactions for different currencies on all social platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-feature text-center mb-30 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="feature-img mb-25">
+                                    <img class='feature_img' src="/static/profile_info.png" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Custom Profile Details change</h5>
+                                    <p>This feature allow user to change user's personal details.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========================= feature-section end========================= -->
+
+        <!-- ========================= about-section start ========================= -->
+        <section id="about" class="about-section pt-150 pb-20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about-img mb-30">
+                            <img src="/static/dist/img/about-img.svg" alt="image" class=" wow fadeInLeft" data-wow-delay=".4s">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about-content mb-30">
+                            <div class="section-title mb-40">
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">The Future of cryptocurrency in India</h2>
+                            </div>
+                            <p class="mb-15 wow fadeInUp" data-wow-delay=".4s">Finance Minister Nirmala Sitharaman made two announcements in Union Budget 2022-23 significant for the crypto asset industry of India. The Indian government will levy a 30% tax on the profit earned by crypto-assets, and the Digital rupee will be introduced in the fiscal year 2022-23. After being apprehensive and reluctant to adopt cryptocurrency, the Indian government has finally decided to open up to the virtual form of money.</p>
+                            <p class="mb-35 wow fadeInUp" data-wow-delay=".6s">As per the 2021 Global Crypto Adoption index issued by Chainalysis, a company specializing in blockchain analysis, the world witnessed an 880% jump in crypto adoption. An index score of 0.37 garnered India second place in the index behind Vietnam. The Indian crypto market saw a growth of 641% in a year.</p>
+                            <a href="https://www.drishtiias.com/blog/the%20future%20of%20cryptocurrency%20in%20india#:~:text=The%20Indian%20government%20will%20levy,the%20virtual%20form%20of%20money." class="theme-btn theme-btn-2 wow fadeInRight" data-wow-delay=".8s">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team-section pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 mx-auto">
+                        <div class="section-title text-center mb-55">
+                            <h2 class="mb-20 wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Meet Our Team</h2>
+                            <!-- <p class="mb-55 wow fadeInLeft" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">B.tech final year project members with project advisor</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6"></div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-team text-center mb-120 wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                             <div class="team-img mb-20">
+                                <img src="/static/diwedi_sir.jpeg" alt="">
+                                <div class="team-info">
+                                    <h5>Dr. Shri Prakash Dwivedi</h5>
+                                    <span>Project Advisor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-120 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <div class="team-img mb-20">
+                                <img src="/static/bhawna.jpeg" alt="">
+                                <div class="team-info">
+                                    <h5>Bhawna Joshi</h5>
+                                    <span>IT (53812)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-120 wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <div class="team-img mb-20">
+                            <img src="/static/sk.jpeg" alt="">
+                            <div class="team-info">
+                                <h5>Sourabh Kaintura</h5>
+                                <span>IT (53842)</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-120 wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                            <div class="team-img mb-20">
+                                <img src="/static/skumar.jpeg" alt="">
+                                <div class="team-info">
+                                    <h5>Shudhanshu Kumar</h5>
+                                    <span>IT (53840)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-team text-center mb-120 wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                            <div class="team-img mb-20">
+                                <img src="/static/rinku.jpeg" alt="">
+                                <div class="team-info">
+                                    <h5>Ritanshu Bhatt</h5>
+                                    <span>IT (53834)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section class="countdown-section pt-70 pb-70 img-bg" style="background-image: url(/static/dist/img/common-bg.jpg)">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="countdown-img">
+                            <img src="/static/dist/img/countdown-img.svg" alt="" class=" wow fadeInLeft" data-wow-delay=".4s">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="countdown-content-wrapper">
+                            <div class="countdown-content">
+                                <h2 class="text-white mb-35  wow fadeInUp" data-wow-delay=".2s">Why Should Anyone Invest in Crypto?</h2>
+                                <p class="text-white mb-30 wow fadeInUp" data-wow-delay=".4s">There's little doubt that digital currencies have seen remarkable growth. Spurred on by the incredible growth of bitcoin (BTC) and ether (ETH), the field of cryptocurrencies has only continued to expand.
+
+In addition to initial coin offerings (ICOs), there are now many new types of blockchain investment products, from decentralized finance to non-fungible tokens. Many digital currency enthusiasts believe that these investments could produce a new batch of digital currency millionaires (or billionaires). But those who have not yet invested in the digital currency space may be wondering if there are compelling reasons to start now. Below, we'll consider some of the reasons people might want to buy digital currencies, as well as some other considerations before investing.</p>
+                                <a href="https://www.investopedia.com/tech/question-why-should-anyone-invest-crypto/#:~:text=A%20Stable%2C%20Censorship%2DResistant%20Store,supply%2C%20capped%20by%20mathematical%20algorithms." class="theme-btn wow fadeInUp" data-wow-delay=".6s">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= footer start ========================= -->
+        <footer class="footer pt-100 img-bg" style="background-image: url(/static/dist/img/common-bg.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".6s">
+                            <h4>Resources</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="https://enterprise.lunarcrush.com/api">Lunar Crush API</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coingecko.com/">CoinGecko API</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.djangoproject.com/">Django</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <p class="mb-0 text-white text-center"><a href="http://www.gbpuat-tech.ac.in/" rel="nofollow" target="_blank">College of Tecnology, Pantnagar</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- ========================= footer end ========================= -->
+
+
+        <!-- ========================= scroll-top ========================= -->
+        <a href="#" class="scroll-top">
+            <i class="lni lni-chevron-up"></i>
+        </a>
+        
+		<!-- ========================= JS here ========================= -->
+		<script src="/static/dist/js/bootstrap.bundle-5.0.0.alpha-1-min.js"></script>
+        <script src="/static/dist/js/wow.min.js"></script>
+		<script src="/static/dist/js/main.js"></script>
+    </body>
+</html>

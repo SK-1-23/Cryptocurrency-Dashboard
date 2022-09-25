@@ -1,0 +1,81 @@
+<div class="emp-profile">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="profile-img">
+                {% if not data.img %}
+                    <img src="/static/profile.png" id='profile_img' alt=""/>
+                {% else %}
+                    <img src="data:image/png;base64,{{data.img}}" id='profile_img' alt=""/>
+                {% endif %}
+                <div class="file btn btn-lg btn-primary">
+                    Change Photo
+                    <input type="file" class="details" name="profile_img"/>
+                </div>
+            </div>
+        </div>
+    </div>     
+</div>
+<div class="col-lg-12" style="text-indent: center">
+    <center>
+        <table class="table table-sm" style="width: 50%">
+            <tr>
+                <td>User ID :</td>
+                <td><input class="form-control details" type="" name="user_id" value="{{data.user_id}}" disabled/></td>
+                <td>Name :</td>
+                <td><input class="form-control details" type="" name="name" value="{{data.name}}"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input class="form-control details" type="" name="email" value="{{data.email}}" disabled/></td>
+                <td>Phone :</td>
+                <td><input class="form-control details" type="number" name="phone" value="{{data.phone}}"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;padding: 30px;">
+                    <button class="btn btn-primary" id="submit_details">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+</div>
+<script type="text/javascript">
+    data = "{{data|safe}}"
+    $(document).on('click','#submit_details',function(){
+        var profile_data = new FormData();
+        $(this).html('<i class= "fa fa-spinner fa-spin" ></i>');
+        $('.details').each(function(){
+              if($(this).attr('name')=='profile_img'){
+                  file= $(this)[0].files;
+                  if(file.length>0){
+                    for(i=0;i<file.length;i++){
+                      profile_data.append($(this).attr('name'),file[i])
+                    }    
+                  }  
+              }
+              else{
+                profile_data.append($(this).attr('name'),$(this).val());
+              }
+        })
+        $.ajax({
+          url:'/crypto_dashboard/save_user_profile/',
+          type:"POST",
+          dataType:"json",
+          data:profile_data,
+          processData: false,
+          contentType: false,
+          headers: { "X-CSRFToken": csrftoken },
+          success:function(data){
+            $("#submit_details").html('Submit');
+            if(file.length>0){
+                var imgtag = document.getElementById("profile_img");
+                imgtag.src = URL.createObjectURL(file[0]);
+            }
+            alert("Profile updated successfully")
+         },
+         error:function(err){
+          console.log(JSON.stringify(err,null,4))
+          $("#submit_details").html('Submit');
+        }
+      });
+    })  
+</script>
